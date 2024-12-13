@@ -209,7 +209,31 @@ def GAME():
                     print("thank you for playing")
             retry()
         elif FourthPath == "dragon egg":
-            print("thus")
+            print("You slid the dragon egg across the table. The elf looks down at it surprised.")
+            print("What..what is that? They ask. A dragon egg, you tell them")
+            print("They stare at it in disbelief for a moment before shrugging.")
+            print("Fair enough! They shrug before taking the egg.")
+            inventory.remove("dragon egg")
+            print("You smile as you look down at your drink.")
+            print("You take your long awaited sip, the drink immediantly shocks you as a jolt of electricity shoots through your entire body")
+            print("You shoot your head back in surprise before nervously taking another sip.")
+            print("The drink is burning hot, yet for some reason it doesn't actually burn you and honestly kind of feels nice in your throat like warm tomato soap.")
+            print("The lemon is quite subtle with the taste of lightning being more apparent. Though the lemon compliments the drink nicely.")
+            print("Before you know it, the drink is all gone, you finished it a lot quicker then expected!")
+            print("You're actually quite happy, the drink was surprisngly delicious! You stand up, casually strolling out of the tavern")
+            print("That was nice, you think. You know the little dragon you've been caring for would've loved that drink if they were hatched.")
+            print("You check your inventory to check on them")
+            print(inventory)
+            print("Oh crap! You totally just gave away that dragon egg! Dang it! You were so distracted by your delicious drink that you didn't even realize you gave it away!")
+            print("You rush back to the tavern, as you literally can't continue your journey without that egg!")
+            print("Hopefully the elf won't mind returning it to you once they know your situation?")
+            def retry():
+                redo = input("Would you like to restart? ")
+                if redo == "yes":
+                    GAME()
+                else:
+                    print("thank you for playing")
+            retry()
         else:
             print("The elf looks at what you just gave them before sighing. Yeah sorry pal, they shrug before whistling")
             print("Two buff ogers appear behind you before throwing you out of the tavern.")
